@@ -14,6 +14,7 @@ Lightweight web Discord client (WIP)
 3. Voice chat
 4. Instantly getting messages
 5. Group chats 
+<br>
 ...you name it
 
 # Installation
