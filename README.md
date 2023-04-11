@@ -19,5 +19,5 @@ Lightweight web Discord client (WIP)
 
 # Installation
 1. Download Node.js
-2. Open terminal in folder with sertex and type `node server.js`
+2. Open terminal in folder with sertex, then type `npm i` and `node server.js`
 3. Open your browser and type http://localhost
