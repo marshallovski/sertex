@@ -1,0 +1,26 @@
+/* NOTE: info and tips div's are using same class as error div */
+.error-container {
+    background-color: #313338;
+    position: fixed;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    border: 1px solid #555;
+}
+
+.error-container_body {
+    padding: 16px;
+    user-select: none;
+}
+
+.error-container_body-icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.error-container_body-text {
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 14px;
+}

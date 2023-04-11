@@ -1,0 +1,56 @@
+.crcblur {
+    background: url('/assets/circlesbg.svg') center;
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    z-index: -999;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginpage {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: #111;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 0 20px #000;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.lg_tokeninput {
+    border: 1px solid #555;
+    background-color: rgb(48, 48, 48);
+    border-radius: 4px;
+    padding: 5px 12px;
+    outline: none;
+    width: 400px;
+    color: #dbdbdb;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.lg_tokeninput:focus {
+    border: 1px solid #cfd7e6;
+}
+
+.lg_subheading {
+    color: gray;
+    font-size: 12px;
+}
+
+.lg_btn {
+    background-color: #79589f;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    font-family: 'PT Sans', sans-serif;
+}

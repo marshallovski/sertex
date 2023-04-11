@@ -1,0 +1,14 @@
+.topbar {
+    background-color: #2f3136;
+    width: auto;
+    z-index: 800;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 8px;
+}
+
+.topbar_chname {
+    margin-left: 15%;
+    font-size: 24px;
+}

@@ -1,0 +1,110 @@
+.msg {
+    display: inline-block;
+    width: auto;
+    margin-top: 1.0625rem;
+}
+
+.msg_avatar {
+    width: 34px;
+    height: 34px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: #40433b;
+    border-radius: 16px;
+    user-select: none;
+    font-size: 10px;
+}
+
+.msg_username {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.msg_msgcontent {
+    display: inline-block;
+    word-wrap: break-word;
+    position: relative;
+    color: #dcddde;
+    user-select: text;
+    margin-left: 54px;
+    font-size: 16px;
+    vertical-align: top;
+    line-height: 1.375rem;
+    bottom: 15px;
+    z-index: 0;
+    font-family: var(--font);
+}
+
+.msg_time {
+    float: right;
+    margin-left: 1em;
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.msg_img {
+    max-width: 500px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.msg_embed {
+    background-color: #2f3136;
+    border-radius: 5px;
+    padding: 8px;
+    border-left: 4px solid #1e2327;
+    max-width: 530px;
+}
+
+.msg_embed-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.msg_embed-title-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.msg_embed-description {
+    color: #dcddde;
+    font-size: 13px;
+}
+
+.msg_embed-ytiframe {
+    border: 0;
+    width: 500px;
+    height: 300px;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+.msg_embed-thumb {
+    max-width: 500px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.mention {
+    background: rgba(114, 137, 218, 0.4);
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.badge {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    padding: 0 7px;
+    line-height: 1.0;
+    font-size: 10px;
+    vertical-align: 30%;
+    white-space: nowrap;
+}

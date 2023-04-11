@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs') %>
+        <% cssComponentsFiles.forEach(file=> { %>
+            <link rel="stylesheet" href="/css/components/<%- file %>">
+            <% }) %>
+
+                <% cssFiles.forEach(file=> { %>
+                    <link rel="stylesheet" href="/css/<%- file %>">
+                    <% }) %>
+
+                        <style>
+                            #container,
+                            .sidebar_servers-list,
+                            .sidebar-dm,
+                            .msgbox,
+                            .topbar {
+                                display: none;
+                            }
+                        </style>
+</head>
+
+<body>
+    <noscript>
+        <style>
+            #container {
+                display: none;
+            }
+        </style>
+        <h1>Enable JavaScript in your browser</h1>
+    </noscript>
+
+    <script>
+        if (!window.WebSocket) alert('Your browser doesn\'t support WebSocket! Please upgrade your browser.');
+
+        function $(elem) {
+            return document.querySelector(elem);
+        }
+
+        window.onload = () => $('#container').style.display = 'block';
+    </script>
+    <div id="iconPreloadContainer"></div>
+
+    <div id="container">
+        <div class="sidebar_servers-list">
+            <img src="/assets/logo.png" alt="sertex" class="sidebar_logo" id="getDMs_btn">
+            <hr class="sidebar_guildSeparator">
+            <div id="sidebar_servers-list-list"></div>
+        </div>
+        <div class="sidebar-dm">
+            <div class="sidebar-dm_header-nobanner">
+                <h3 class="sidebar-dm_title">Direct Messages</h3>
+                <div class="dev_buttons">
+                    <button class="btn-default" onclick="sertex.dev.switchToDevServer();">dev server</button>
+                    <button class="btn-default" onclick="sertex.dev.triggerError();">trigger error</button>
+                    <button class="btn-default" onclick="sertex.ui.getDMs();">reload DMs list</button>
+                    <button class="btn-default" onclick="sertex.ui.getGuilds();">reload guilds list</button>
+                    <button class="btn-default" onclick="sertex.ui.getMessages(sertex.currentChannel);">reload messages</button>
+                    <button class="btn-default" onclick="localStorage.setItem('sertex_settings', ''); location.reload();">reset settings</button>
+                </div>
+            </div>
+            <div id="sidebar-dm_dmlist"></div>
+        </div>
+        <div class="topbar">
+            <h1 class="topbar_chname"></h1>
+        </div>
+        <main>
+            <div id="messages"></div>
+        </main>
+        <div class="msgbox">
+            <input type="text" class="msgbox_input" id="msginput_text" autocomplete="off"
+                placeholder="Send a message to" autofocus>
+        </div>
+    </div>
+
+    <script src="/js/sertex.js"></script>
+    <script src="/js/constants.js"></script>
+    <script src="/js/ui/getDMs.js"></script>
+    <script src="/js/getGuild.js"></script>
+    <script src="/js/getChannel.js"></script>
+    <script src="/js/ui/getMessages.js"></script>
+    <script src="/js/sendMessage.js"></script>
+    <script src="/js/channelTyping.js"></script>
+    <script src="/js/ui/getGuilds.js"></script>
+    <script src="/js/logger.js"></script>
+    <script src="/js/ui/displayInfo.js"></script>
+    <script src="/js/ui/displayError.js"></script>
+    <script src="/js/ui/getChannels.js"></script>
+    <script src="/js/ui/showMessageBox.js"></script>
+    <script src="/js/ui/showTopbar.js"></script>
+    <script src="/js/ui/showDMsPanel.js"></script>
+    <script src="/js/ui/showGuildsPanel.js"></script>
+    <script src="/js/ui/hideMessageBox.js"></script>
+    <script src="/js/ui/hideTopbar.js"></script>
+    <script src="/js/ui/hideDMsPanel.js"></script>
+    <script src="/js/ui/hideGuildsPanel.js"></script>
+    <script src="/js/utils/preloadIcons.js"></script>
+    <script src="/js/home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/* also known as "message input" */
+.msgbox {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    margin: 0 50px;
+    background-color: #2f3136;
+}
+
+.msgbox_input {
+    padding: 8px;
+    border-radius: 5px;
+    width: 400px;
+    border: 1px solid gray;
+    background-color: #2f4444;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.msgbox_input:focus {
+    border: 1px solid lightgray;
+}
